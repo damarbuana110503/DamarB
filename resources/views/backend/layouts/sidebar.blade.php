@@ -19,14 +19,46 @@
       </a>
       <ul class="nav nav-treeview">
         <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="fas fa-university nav-icon"></i>
-            <p>Base Data</p>
+          <a href="{{ route('backend.master-jenis') }}" class="nav-link">
+            <i class="fas fa-edit nav-icon"></i>
+            <p>Data Jenis</p>
+          </a>
+        </li>
+      </ul>
+      <ul class="nav nav-treeview">
+        <li class="nav-item">
+          <a href="{{ route('backend.master-satuan') }}" class="nav-link">
+            <i class="fas fa-edit nav-icon"></i>
+            <p>Data Satuan</p>
+          </a>
+        </li>
+      </ul>
+      <ul class="nav nav-treeview">
+        <li class="nav-item">
+          <a href="{{ route('backend.master-barang') }}" class="nav-link">
+            <i class="fas fa-edit nav-icon"></i>
+            <p>Data Barang</p>
+          </a>
+        </li>
+      </ul>
+      <ul class="nav nav-treeview">
+        <li class="nav-item">
+          <a href="{{ route('backend.master-supplier') }}" class="nav-link">
+            <i class="fas fa-edit nav-icon"></i>
+            <p>Data Supplier</p>
           </a>
         </li>
       </ul>
     </li>
 
+      <li class="nav-item">
+        <a href="{{ route('backend.relasi-barang-supplier') }}" class="nav-link">
+          <i class="fas fa-link nav-icon"></i>
+          <p>Relasi Barang Supplier</p>
+        </a>
+      </li>
+
+      
     {{-- <li class="nav-item {{ (request()->is('akun*')) || (request()->is('roles*')) ? 'menu-open' : '' }}">
       <a href="#" class="nav-link {{ (request()->is('akun*')) || (request()->is('roles*')) ? 'active' : '' }}">
         <i class="nav-icon fas fa-users text-secondary"></i>
